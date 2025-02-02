@@ -1,8 +1,9 @@
 import { ThemeProvider } from 'next-themes'
-import { JetBrains_Mono } from 'next/font/google'
+import { JetBrains_Mono } from 'next/font/google' 
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 import '@/app/globals.css'
-import Header from '@/components/Header'
 
 const mono = JetBrains_Mono({
   variable: '--font-mono',
@@ -27,8 +28,10 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-          <Header />
+        <Header/>
           {children}
+
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
