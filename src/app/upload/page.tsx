@@ -1,5 +1,5 @@
 'use client'
-import { useState, ChangeEvent } from 'react'
+import { useState, ChangeEvent, useEffect } from 'react'
 import Image from 'next/image'
 import questionMark from '@/public/question-mark.svg'
 import { Button } from '@/components/ui/button'
@@ -13,6 +13,23 @@ const Page = () => {
   const [uploading, setUploading] = useState<boolean>(false)
   const [progress, setProgress] = useState<number>(0)
   const [shareSocial, setShareSocial] = useState<boolean>(false)
+  const [displayInstructions, setDisplayInstructions] = useState(false)
+
+
+
+
+
+
+const closeModal = () => {
+    setDisplayInstructions(false)
+}
+const openModal = () => {
+    setDisplayInstructions(true)
+}
+
+useEffect(() => {
+    openModal()
+  }, []);
 
   const handleFileChange = (
     event: ChangeEvent<HTMLInputElement>,
@@ -39,7 +56,9 @@ const Page = () => {
     }
   }
 
-  const handleUpload = async () => {
+  const handleUpload = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+
     if (!beforeImage || !afterImage) {
       alert('Please upload both before and after images.')
       return
@@ -68,7 +87,7 @@ const Page = () => {
     >
       <form className='flex w-full max-w-[926px] flex-col items-center justify-center gap-6'>
         <div className='flex w-fit items-center justify-center gap-[10px] border-b-[1px] border-[#FAFF00] px-3 pb-[10px] text-center'>
-          <h3  className='text-sm font-normal text-[#000000]  cursor-pointer'>
+          <h3  onClick={openModal} className='text-sm font-normal text-[#000000]  cursor-pointer'>
             Submission Requirements
           </h3>
           <span>
@@ -119,7 +138,7 @@ const Page = () => {
 
 
 
-      <InstructionsModal/>
+      {displayInstructions && <InstructionsModal  closeModal = {closeModal}  />}
     </section>
   )
 }
