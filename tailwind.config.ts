@@ -6,7 +6,11 @@ export default {
   content: ['./src/**/*.{ts,tsx,md,mdx}'],
   theme: {
     extend: {
-      fontFamily: { mono: ['var(--font-mono)'] },
+      fontFamily: { 
+        mono: ['var(--font-mono)'],
+        nunito: ['Nunito', 'sans-serif'],
+        bebas: ['Bebas Neue', 'cursive'],
+       },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
