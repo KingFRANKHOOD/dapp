@@ -55,8 +55,13 @@ const Login: React.FC = () => {
 
       <div className="flex-grow flex flex-col items-center justify-center">
         <h2
-          className="text-2xl md:text-4xl lg:text-6xl xl:text-8xl font-bold mb-4 text-center"
-          style={{ whiteSpace: 'nowrap'}}
+          className="text-2xl md:text-4xl lg:text-6xl xl:text-8xl font-bold mb-4 text-center px-4"
+          style={{ 
+            whiteSpace: 'normal',
+            maxWidth: '100%',
+            wordBreak: 'break-word',
+            lineHeight: '1.2'
+          }}
         >
           DECLEANUP REWARDS
         </h2>
