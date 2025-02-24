@@ -79,7 +79,12 @@ const Login: React.FC = () => {
 
         <button
           className="w-full py-4 bg-black text-yellow-500 font-bold rounded hover:bg-gray-800"
-          style={{ fontSize: '40px', color: '#FAFF00', margin: '20px', width: 'calc(100% - 40px)' }}
+          style={{ 
+            fontSize: 'clamp(24px, 5vw, 40px)',
+            color: '#FAFF00', 
+            margin: '20px', 
+            width: 'calc(100% - 40px)' 
+          }}
         >
           CONNECT WALLET
         </button>
