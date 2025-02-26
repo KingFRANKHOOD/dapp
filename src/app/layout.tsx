@@ -27,10 +27,10 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-        <Header/>
+        {/* <Header/> */}
           {children}
 
-          <Footer/>
+          {/* <Footer/> */}
         </ThemeProvider>
       </body>
     </html>

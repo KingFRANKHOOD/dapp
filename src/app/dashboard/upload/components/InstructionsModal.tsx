@@ -13,31 +13,40 @@ const InstructionsModal: React.FC<InstructionsModalProps> = ({ closeModal }) => 
   ];
 
   return (
-    <section className="w-full h-full fixed top-0 left-0  bg-black bg-opacity-[70%] z-10 flex items-center justify-center py-5 px-4">
-      <div className="border-[11px] py-2 border-[#FAFF00] bg-[#58B12F] min-w-[350px] h-auto md:w-[781px] md:h-[525px] relative flex items-center justify-center">
-      
+    <section className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-70 p-4">
+      {/* Modal Container */}
+      <div className="relative border-[11px] border-[#FAFF00] bg-[#58B12F] min-w-[350px] w-full max-w-[781px] h-auto md:h-[525px] flex items-center justify-center p-6">
+        {/* Close Button */}
         <button
           onClick={closeModal}
-          className="group w-[40px] h-[40px] md:w-[67px]  md:h-[67px] bg-[#000000] absolute top-[5%] right-[5%] flex items-center justify-center cursor-pointer  "
+          className="group absolute top-4 right-4 w-[40px] h-[40px] md:w-[67px] md:h-[67px] bg-[#000000] flex items-center justify-center cursor-pointer rounded-full transition-transform duration-300 hover:scale-110"
         >
           <Image
             src={closeIcon}
             alt="Close"
             height={31.42}
             width={31.42}
-            className=" transform transition duration-300 ease-in-out group-hover:scale-125"
+            className="transform transition duration-300 ease-in-out group-hover:scale-125"
           />
         </button>
 
-   
+        {/* Instructions Content */}
         <div className="w-full flex flex-col items-center justify-center gap-6">
-          <div className="w-fit flex flex-col items-center justify-center gap-8 text-center">
+          <div className="w-full flex flex-col items-center justify-center gap-8 text-center">
             {instructions.map((instruction, index) => (
-              <div key={index} className="flex flex-col gap-3 items-center">
-                <h2 className="font-bebas h-[52px] w-[37px] bg-[#FAFF00] text-[#000000] font-normal text-[40px] flex items-center justify-center">
+              <div
+                key={index}
+                className="flex flex-col items-center gap-3"
+              >
+                {/* Instruction Number */}
+                <h2 className="font-bebas h-[52px] w-[37px] bg-[#FAFF00] text-[#000000] font-normal text-[40px] flex items-center justify-center rounded-md">
                   {index + 1}
                 </h2>
-                <p className="font-normal text-2xl text-[#000000] font-nunito  " >{instruction}</p>
+
+                {/* Instruction Text */}
+                <p className="font-nunito font-normal text-xl md:text-2xl text-[#000000]">
+                  {instruction}
+                </p>
               </div>
             ))}
           </div>
