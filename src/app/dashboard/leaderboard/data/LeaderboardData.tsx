@@ -1,11 +1,67 @@
-const LeaderBoardData = Array.from({ length: 100 }, (_, index) => {
-  return {
-    rank: index + 1,
-    user: `0x${Math.random().toString(16).slice(2, 42)}`,
-    cleanupsDone: Math.floor(Math.random() * 50) + 1, // Between 1 and 50
-    referrals: Math.floor(Math.random() * 100) + 1, // Between 1 and 100
-    dcuPoints: parseFloat((Math.random() * 5000 + 500).toFixed(2)), // Between 500 and 5500
-  };
-});
+const LeaderBoardData = [
+  {
+    rank: 1,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 2,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 3,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 4,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 5,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 6,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 7,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 8,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+  {
+    rank: 9,
+    user: '0xC05d900f7BE157dA02e7F760C67f4948B330cd22',
+    cleanupsDone: 20,
+    referrals: 30,
+    dcuPoints: 2070.5,
+  },
+]
 
-export default LeaderBoardData;
+export default LeaderBoardData
