@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply text-black;
+  }
+  
+}
+
 @keyframes scroll {
     0% {
       transform: translateX(0);
