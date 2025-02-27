@@ -1,3 +1,4 @@
+
 import SideBar from "./leaderboard/components/SideBar";
 import Table from "./leaderboard/components/Table";
 
@@ -11,3 +12,7 @@ export default function Page() {
         </div>
     )
 }
+
+
+
+export default page
