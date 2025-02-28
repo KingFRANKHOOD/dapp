@@ -7,22 +7,22 @@ function Preclaim() {
   return (
     <div className='flex h-screen w-full flex-col'>
       <div className='h-1/3 w-full bg-white bg-opacity-0'>
-        <span className='absolute right-6 top-4 scale-x-[2] tracking-tighter text-5xl font-sans font-hairline text-white'style={{ fontWeight: 100, fontFamily: "Arial, sans-serif" }}>
+        <button className='absolute right-8 top-4 scale-x-[1.5] text-4xl font-sans font-light text-white'>
           X
-        </span>
+        </button>
       </div>
       <div className='relative h-2/3 w-[100%] overflow-hidden bg-yellow-400'>
         <div className='absolute top-8 ml-4 flex flex-row gap-16 text-xl'>
           <div className='font-sans font-bold text-black'>
             <span>1. BEFORE</span>
             <div className='mt-8'>
-              <Image src={Before} alt='Profile' width={335} height={304} />
+              <Image src={After} alt='Profile' width={335} height={304} />
             </div>
           </div>
           <div className='flex-row font-sans font-bold text-black'>
             <span>2. AFTER</span>
             <div className='mt-8'>
-              <Image src={After} alt='' width={335} height={304} />
+              <Image src={Before} alt='' width={335} height={304} />
             </div>
           </div>
         </div>
