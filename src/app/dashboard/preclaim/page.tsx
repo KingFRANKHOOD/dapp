@@ -13,28 +13,28 @@ function Preclaim() {
       </div>
       <div className='relative h-3/4 w-[100%] overflow-hidden bg-[#FAFF00] md:h-2/3'>
         <div className='absolute top-4 ml-4 flex flex-row gap-3 text-xl md:gap-6'>
-          <div className='font-sans font-bold text-black'>
+          <div className='text-black leading-6 tracking-normal md:text-xl md:font-normal'>
             <span className=''>1. BEFORE</span>
             <div className='mt-5 md:mt-8'>
               <Image src={After} alt='Profile' width={335} height={304} />
             </div>
           </div>
-          <div className='mr-3 flex-row font-sans font-bold text-black'>
+          <div className='mr-3 flex-row font-bebas text-black'>
             <span>2. AFTER</span>
             <div className='mt-5 md:mt-8'>
               <Image src={Before} alt='' width={335} height={304} />
             </div>
           </div>
         </div>
-        <div className='absolute bottom-56 flex w-full scale-y-150 flex-col text-left font-bebas text-black md:bottom-auto md:right-4 md:top-10 md:w-1/4'>
-          <div className='leading-6 tracking-normal md:text-xl md:font-normal absolute left-4 md:right-6'>
+        <div className='absolute bottom-56 flex w-full scale-y-150 flex-col text-left font-bebas text-black md:bottom-auto md:right-4 md:top-7 md:w-1/4'>
+          <div className='leading-6 tracking-normal md:text-xl md:font-normal absolute left-4 right-2 md:right-6'>
             <span>
               AFTER THE TEAM REVIEW THE PROOF OF CLEANUP, COME BACK TO CLAIM
               YOUR NEW LEVEL. USUALLY THE PROCESS TAKES FROM 2 TO 12 HOURS.
               CONTACT US IN TELEGRAM GROUP IF YOU HAVE QUESTIONS OR FOR
               TROUBLESHOOTING
             </span>
-            <div className='mt-3 text-center font-sans text-2xl font-bold md:right-6 md:mt-20 md:text-3xl'>
+            <div className='mt-3 text-center font-sans text-2xl font-bold md:right-6 md:mt-16 md:text-3xl'>
               IN REVIEW
             </div>
           </div>
